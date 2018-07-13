@@ -8,7 +8,7 @@ import { ProdutosService } from '../../services/produtos.service';
 })
 export class MenuComponent implements OnInit {
 
-  //Variáveis
+  // Variáveis
   produto: string;
 
   constructor(private produtosService: ProdutosService) { }

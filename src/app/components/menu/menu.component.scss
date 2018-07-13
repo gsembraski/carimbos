@@ -3,8 +3,8 @@
 }
 
 .logo {
-    height: 180px;
-    width: 250px;
+    max-height: 180px;
+    max-width: 250px;
 }
 
 .fa-google-plus:focus {
@@ -30,4 +30,11 @@
     line-height: 31px;
     text-decoration: none;
     transition: color 0.2s;
+}
+
+@media (min-width: 576px) {
+    .form-inline .input-group,
+    .form-inline .custom-select {
+        width: 450px !important;
+    }
 }
