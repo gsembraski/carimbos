@@ -1,0 +1,33 @@
+.bg-light {
+    background-color: #563d7c !important;
+}
+
+.logo {
+    height: 180px;
+    width: 250px;
+}
+
+.fa-google-plus:focus {
+    color: red !important;
+}
+
+.fa-twitter:hover {
+    color: #2b55ff;
+}
+
+.fa-twitter:focus {
+    color: #2b55ff;
+}
+
+.fa-google-plus {
+    background-color: #87CEFA;
+    color: #182c39;
+    border-radius: 51%;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 31px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
