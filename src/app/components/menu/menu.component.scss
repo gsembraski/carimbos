@@ -32,6 +32,17 @@
     transition: color 0.2s;
 }
 
+.carrinho{
+    color: #ffd507;
+}
+
+.entrar{
+    color: #ffd507 !important;
+    font-weight: bold;
+    font-size: 20px ;
+    padding-top: 18px !important;
+}
+
 @media (min-width: 576px) {
     .form-inline .input-group,
     .form-inline .custom-select {
