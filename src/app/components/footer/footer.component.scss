@@ -1,0 +1,12 @@
+@import '../../../styles.scss';
+
+.mat-toolbar{
+    background-color: $tertiary;
+    font-family: $font-family-sans-serif;
+}
+
+.sobre{
+    color: $secondary !important;
+    font-weight: bold;
+    font-size: 20px ;
+}

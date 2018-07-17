@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 .bg-light {
     background-color: #563d7c !important;
 }
@@ -41,6 +43,10 @@
     font-weight: bold;
     font-size: 20px ;
     padding-top: 18px !important;
+}
+
+.fixed-top{
+    position: initial;
 }
 
 @media (min-width: 576px) {
