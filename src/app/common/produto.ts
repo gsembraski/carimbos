@@ -1,3 +1,5 @@
+import { Imagem } from "./imagem";
+
 export class Produto {
 
   static fromObject(object: any): Produto {
@@ -9,9 +11,9 @@ export class Produto {
   constructor(public id: number,
         public nome: string,
         public descricao?: string,
-        public imagem?: string,
         public preco?: number,
         public categoria_id?: number,
-        public cor_id?: number
+        public cor_id?: number,
+        public imagens?: Imagem[]
     ) {}
 }
