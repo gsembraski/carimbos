@@ -1,3 +1,18 @@
-<p>
-  home works!
-</p>
+<div class="container-fluid">
+    <div style="width: 300px;">
+        <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="item">Item</label> <input type="text" class="form-control" [(ngModel)]="itemValue" placeholder="Enter content..." id="item" required name="item">
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <h2>Content from Firebase</h2>
+    <div class="col-md-3">
+        <pre *ngFor="let item of items | async">{{item.nome}}</pre>
+    </div>
+</div>

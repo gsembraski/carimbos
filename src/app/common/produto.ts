@@ -1,4 +1,4 @@
-import { Imagem } from "./imagem";
+import { Imagem } from './imagem';
 
 export class Produto {
 

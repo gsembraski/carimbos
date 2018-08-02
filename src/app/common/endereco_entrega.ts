@@ -1,3 +1,4 @@
+// tslint:disable-next-line:class-name
 export class Endereco_entrega {
 
   static fromObject(object: any): Endereco_entrega {

@@ -1,5 +1,6 @@
-import { Pedidos } from "./pedidos";
+import { Pedidos } from './pedidos';
 
+// tslint:disable-next-line:class-name
 export class Forma_pagamento {
 
   static fromObject(object: any): Forma_pagamento {
