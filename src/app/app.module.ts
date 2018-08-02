@@ -18,6 +18,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ProdutoService } from './services/produto.service';
 import { FooterComponent } from './components/footer/footer.component';
 import { SobreComponent } from './components/sobre/sobre.component';
+import { ProdutoComponent } from './components/produto/produto.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SobreComponent } from './components/sobre/sobre.component';
     HomeComponent,
     MenuComponent,
     FooterComponent,
-    SobreComponent
+    SobreComponent,
+    ProdutoComponent
   ],
   imports: [
     BrowserModule,
