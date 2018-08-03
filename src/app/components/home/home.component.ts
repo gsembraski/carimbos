@@ -13,17 +13,7 @@ export class HomeComponent implements OnInit {
   itemValue = '';
   items: Observable<any[]>;
 
-  constructor(public db: AngularFireDatabase,
-              private produtoService: ProdutoService) {
-    this.items = produtoService.getProdutosOfEstabelecimento();
-  }
-
-  onSubmit() {
-    this.db.list('/produto').push({ nome: this.itemValue,
-                                    descricao: 'teste',
-                                    preco: 25.00 });
-    this.itemValue = '';
-  }
+  constructor() {}
 
   ngOnInit() {
   }
