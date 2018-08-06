@@ -11,7 +11,8 @@ export class Produto {
         public descricao?: string,
         public valor?: number,
         public categoria_id?: number,
-        public cor_id?: number,
+        public cores?: {
+            cor_id: number}[],
         public imagem?: string
     ) {}
 }

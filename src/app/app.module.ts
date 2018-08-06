@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MatToolbarModule, MatCardModule } from '@angular/material';
+import { MatToolbarModule, MatCardModule, MatSidenavModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HashLocationStrategy, LocationStrategy, registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
@@ -16,10 +16,13 @@ import { AppRouting } from './app-routing';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { ProdutoService } from './services/produto.service';
 import { FooterComponent } from './components/footer/footer.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { ProdutoComponent } from './components/produto/produto.component';
+import { CategoriaComponent } from './components/categoria/categoria.component';
+
+import { ProdutoService } from './services/produto.service';
+import { CategoriaService } from './services/categoria.service';
 
 registerLocaleData(localePt);
 
@@ -30,7 +33,8 @@ registerLocaleData(localePt);
     MenuComponent,
     FooterComponent,
     SobreComponent,
-    ProdutoComponent
+    ProdutoComponent,
+    CategoriaComponent
   ],
   imports: [
     BrowserModule,
@@ -38,15 +42,19 @@ registerLocaleData(localePt);
     BrowserAnimationsModule,
     MatToolbarModule,
     MatCardModule,
+    MatSidenavModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule, // for database,
     AngularFirestoreModule.enablePersistence()
   ],
-  providers: [{ provide: LocationStrategy,
+  providers: [
+    { provide: LocationStrategy,
     useClass: HashLocationStrategy },
     { provide: LOCALE_ID, useValue: 'pt-BR' },
-    ProdutoService],
+    ProdutoService,
+    CategoriaService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
